@@ -16,7 +16,7 @@ async function handleTweet(tweet) {
 	const twitterUser = tweet.includes.users.filter(
 		(user) => user.id === tweet.data.author_id
 	)[0];
-	console.log(`Tweet from ${twitterUser.username}`);
+	console.log(`Tweet from @${twitterUser.username}`);
 	try {
 		await discordWebhookClient.send({
 			content: `https://twitter.com/${twitterUser.id}/status/${tweet.data.id}`,
@@ -29,6 +29,9 @@ async function handleTweet(tweet) {
 }
 
 async function listenForever(streamFactory, dataConsumer) {
+	console.info(
+		`Started listening to tweets from @${config.twitterUserToTrack}...`
+	);
 	try {
 		for await (const tweet of streamFactory()) {
 			dataConsumer(tweet);
