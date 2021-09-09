@@ -1,0 +1,9 @@
+{
+	"twitterUserToTrack": "edazpotato",
+	"twitter": {
+		"api_key": "",
+		"api_secret": "",
+		"bearer_token": ""
+	},
+	"discord": { "webhook_url": "" }
+}

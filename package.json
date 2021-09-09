@@ -1,0 +1,14 @@
+{
+  "name": "twitter-discord-webhook-bot-thing",
+  "private": "true",
+  "version": "1.0.0",
+  "main": "twitter-discord-webhook-thing.js",
+  "scripts": {
+    "start": "node ./twitter-discord-webhook-thing.js"
+  },
+  "author": "Edazpotato (https://edaz.codes)",
+  "dependencies": {
+    "discord.js": "^13.1.0",
+    "twitter-v2": "^1.1.0"
+  }
+}
