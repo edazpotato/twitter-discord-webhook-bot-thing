@@ -1,5 +1,10 @@
 A little app using the Twitter api V2, that cross-posts tweets from a twitter user to a Discord channel via a webhook.
 
+## What you'll need
+
+-   Admin access to a Discord channel
+-   A Twitter API V2 app
+
 ## Setup
 
 ```shell
