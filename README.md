@@ -2,7 +2,7 @@ A little app using the Twitter api V2, that cross-posts tweets from a twitter us
 
 ## What you'll need
 
--   Admin access to a Discord channel
+-   Administrator access to a Discord channel
 -   A Twitter API V2 app
 
 ## Setup
@@ -19,7 +19,7 @@ pnpm start
 
 Make a copy of `config.example.json` called `config.json`, and fill out the fields.
 
-The `twitterUserToTrack` field is the handle for the twitter user who's tweets you want to crosspost to Discord (Minus the "@"). E.g. to crosspost user "@edazpotato"'s tweets to Discord, you would put "edazpotato" in the `twitterUserToTrack`.
+The `twitterUserToTrack` field is the handle for the twitter user who's tweets you want to cross-post to Discord (Minus the "@"). E.g. to cross-post user "@edazpotato"'s tweets to Discord, you would put "edazpotato" in the `twitterUserToTrack`.
 
 The fields in the `twitter` object are just the credentials you get when you make a project in the Twitter developer console.
 
@@ -27,7 +27,7 @@ To get the `webhook_url` for the `discord` object:
 
 -   Right click on a Discord channel
 -   Select "Edit Channel"
--   Select "Intergrations"
+-   Select "Integrations"
 -   Select "Webhooks"
 -   Press the button labeled "New webhook"
 -   Press the button labeled "Copy webhook URL"
